@@ -1,0 +1,545 @@
+body {
+    font-family: 'Montserrat', "Helvetica Neue", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+}
+
+.main-container{
+    background-color: #f8f8ff;
+}
+
+.wrapper {
+    width: 95%;
+    margin: 0 auto;
+}
+
+/* ===================
+    Tema Rosa e cinza
+   =================== */
+
+.header-container {
+    border-bottom: 20px solid #dddddd;
+}
+
+.footer-container,
+.main aside {
+    border-top: 20px solid #FF385C;
+}
+
+.header-container,
+.footer-container,
+.main aside {
+    background: #FF385C;
+}
+
+.title{
+    font-size: 1.9em;
+    text-align: center;
+}
+
+.title a{
+    color: white;
+    text-decoration: none;
+}
+
+/* ==============
+    Menu
+   ============== */
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav a {
+    display: block;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: .9em;
+    text-transform: uppercase;
+
+    color: #E31C5F;
+    /* background-image: radial-gradient(circle at center, #FF385C 0%, #E61E4D 27.5%, #E31C5F 40%, #D70466 57.5%, #BD1E59 75%, #BD1E59 100% ) !important; */
+    background: #ffffff;
+}
+
+nav a:hover, 
+nav a.active {
+    background: #E31C5F;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+
+/* ==============
+    Main
+   ============== */
+
+.main {
+    padding: 30px 0;
+}
+
+.main article h1 {
+    font-size: 2em;
+}
+
+.main aside {
+    color: white;
+
+    border-radius: 5px;
+    padding: 0px 5% 10px;
+}
+
+.footer-container footer {
+    color: white;
+    padding: 10px 0;
+}
+
+.footer-container .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-container .find-me {
+    display: flex;
+    justify-content: space-evenly;
+    width: 100px;
+}
+
+.footer-container .find-me a img {
+    height: 32px;
+    width: 32px;
+}
+
+.footer-container .find-me a:hover img{
+    filter: invert(100%);
+}
+
+/* ==============
+    Home
+   ============== */
+
+.banner {
+    position: relative;
+    overflow: hidden;
+}
+
+.banner img{
+    width: 100%;
+}
+
+.banner h1, .banner p{
+    color: #fff;
+    text-shadow: 2px 2px 4px #666;
+
+    position: relative;
+    z-index: 2;
+}
+.banner .lead {
+    background: #FF385C70;
+
+    border: 1px solid #FF385C;
+    border-radius: 5px;
+    display: block;
+    padding: 20px;
+    margin-top: 15%;
+    position: relative;
+}
+
+.residence section.card {
+    background-color: #ffffff;
+    border: 1px solid #eeeeee;
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 10px 5px #eee;
+       -moz-box-shadow: 2px 2px 10px 5px #eee;
+            box-shadow: 2px 2px 10px 5px #eee;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.residence iframe {
+    max-width: 100%;
+}
+
+.residence audio {
+    height: 50px;
+    width: 100%;
+}
+
+.residence .img-residence{
+    max-width: 560px;
+    overflow: hidden;
+}
+
+.residence .img-residence img{
+    min-height: 100%;
+    width: 100%;
+}
+
+.residence h3,
+.residence h3 a,
+.residence h3 a:visited{
+    color: #333333;
+    text-decoration: none;
+}
+.residence h3:hover,
+.residence h3 a:hover{
+    color: #FF385C;
+}
+
+.residence .preco{
+    color: #ffffff;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+
+    background-color: #FF385C;
+    border: 1px solid;
+    display: block;
+    padding: 2px;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    bottom: 30px;
+    right: 20px;
+}
+
+.residence .preco:hover{
+    background-color: #333333;
+    color: #ffffff;
+}
+
+
+
+
+/* ==============
+    GMaps
+   ============== */
+/* Always set the map height explicitly to define the size of the div
+* element that contains the map. */
+#map {
+    /* height: 100%; */
+    /* padding-top: 80px;
+    margin-top: -80px; */
+    height: 95vh;
+    position: sticky !important;
+    top: 0px;
+}
+
+/* ==============
+    Sobre
+   ============== */
+
+aside.me h3 {
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+aside.me p {
+    text-transform: uppercase;
+    text-align: center;
+    margin-top: 0;
+}
+
+aside.me .find-me {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+aside.me .find-me a img {
+    height: 32px;
+    width: 32px;
+}
+
+aside.me .find-me a:hover img{
+    filter: invert(100%);
+}
+
+/* ==============
+    Contato
+   ============== */
+.main.contato  {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.main.contato iframe{
+    width: 100%;
+}
+
+/* ==============
+    Saiba Mais
+   ============== */
+
+.fontes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.fontes section{ 
+    border: 0;
+    margin-bottom: 10px;
+    min-width: 50%;
+}
+
+.fontes svg,
+.fontes img{
+    color: #000000;
+    display: block;
+    max-width: 200px;
+    max-height: 50px;
+    animation: showLogo 2s;
+    animation-delay: .2s;
+    animation-fill-mode: both;
+}
+
+.fontes a:hover svg,
+.fontes a:hover img{
+    color: #000;
+    animation: hoverLogo 1s;
+    animation-delay: .2s;
+    animation-fill-mode: both;
+}
+
+@keyframes showLogo {
+    from {top: 0px; opacity: .2;}
+    to {top: 0px; opacity: 1;}
+}
+
+@keyframes hoverLogo {
+    from {top: 0px; opacity: 1;}
+    to {top: 0px; opacity: .5;}
+}
+
+
+/* ==========================================================================
+   Media Queries
+   ========================================================================== */
+
+/* ====================
+    TABLET
+    ==================== */
+
+@media only screen and (min-width: 480px) {
+
+/* ====================
+    Menu
+   ==================== */
+
+    nav a {
+        margin-top: 15px;
+        margin-bottom: 0;
+        padding: 15px 2%;
+        min-width: 100px;
+    }
+
+    nav li:first-child a {
+        margin-left: 0;
+    }
+
+    nav li:last-child a {
+        margin-right: 0;
+    }
+
+    .banner {
+        height: 250px;
+    }
+
+    .banner img {
+        position: absolute;
+        top: -190%;
+    }
+
+    .banner.sobre img {
+        top: -35%;
+    }
+
+    .banner.contato img {
+        top: -10%;
+    }
+
+    .banner.saiba-mais img {
+        top: -20%;
+    }
+
+    .banner .lead {
+        background: #FF385C70;
+
+        border: 0px;
+        border-radius: 0px;
+        display: block;
+        padding: 20px;
+        margin-top: 0;
+        height: 210px;
+    }
+
+    .banner .wrapper{
+        margin: 0;
+        width: 100%;
+    }
+
+    .residence .img-residence{
+        height: 333px;
+    }
+
+}
+
+/* ====================
+    DESKTOP
+   ==================== */
+@media only screen and (min-width: 768px) {
+
+/* ====================
+    Efeitos
+   ==================== */
+
+    .header-container,
+    .main aside {
+        -webkit-box-shadow: 2px 2px 10px 5px #eee;
+           -moz-box-shadow: 2px 2px 10px 5px #eee;
+                box-shadow: 2px 2px 10px 5px #eee;
+    }
+
+/* ============
+    Menu
+   ============ */
+
+    .title {
+        float: left;
+        text-align: left;
+    }
+
+    nav {
+        float: right;
+        width: 35%;
+    }
+
+/* ============
+    Geral
+   ============ */
+
+    .main article {
+        float: left;
+        width: 40%;
+    }
+
+    .main aside {
+        float: right;
+        width: 48%;
+    }
+
+    article.about{
+        width: 60%;
+        float: right;
+    }
+
+    aside.me {
+        float: left;
+        width: 20%;
+    }
+}
+
+
+/* ===============
+    WIDE - TELAS GRANDES
+   =============== */
+@media only screen and (min-width: 1140px) {
+
+    /* .wrapper {
+        width: 1026px; 
+        margin: 0 auto;
+    } */
+}
+
+/* ===============
+    WIDE - TELAS GIGANTESCAS
+   =============== */
+   @media only screen and (min-width: 1600px) {
+
+    /* .wrapper {
+        width: 1226px; 
+        margin: 0 auto;
+    } */
+
+    .banner img {
+        position: absolute;
+        top: -80%;
+    }
+
+    .banner.sobre img {
+        top: -100%;
+    }
+
+    .banner.contato img {
+        top: -40%;
+    }
+
+    .banner.saiba-mais img {
+        top: -20%;
+    }
+}
+
+
+/* ==========================================================================
+   Helpers
+   ========================================================================== */
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
