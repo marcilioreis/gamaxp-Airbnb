@@ -41,10 +41,45 @@
             <img src="https://images.unsplash.com/photo-1467987506553-8f3916508521?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2500&q=80" alt="">
             <div class="wrapper clearfix">
                 <div class="lead">
-                    <h1>Acomodações em Copenhague</h1>
-                    <p><strong>Verifique as restrições de viagem antes de fazer uma reserva.</strong><br>
-                        A saúde e a segurança das nossas comunidades vêm sempre em primeiro lugar. <br>
-                        Siga as orientações do governo e viaje apenas se for essencial.</p>
+                    <div class="warning">
+                        <h1>Stays in Copenhague</h1>
+                        <p><strong>Check travel restrictions before booking.</strong><br>
+                            The health and safety of our communities come first.<br>
+                            Please follow government guidelines and travel only if it's essential.</p>
+                    </div>
+                    <div class="searchBar">
+                        <form action="POST" method="post" id="form-search">
+                            <div class="field">
+                                <label>Location:</label>
+                                <select name="city" id="city">
+                                    <option value="Paris">Paris</option>
+                                    <option value="London">London</option>
+                                    <option value="Berlin">Berlin</option>
+                                    <option value="Roma">Roma</option>
+                                    <option value="Barcelona">Barcelona</option>
+                                </select>
+                            </div>
+
+                            <div class="field">
+                                <label>Guests:</label>
+                                <input type="text" name="guests" id="guests">
+                            </div>
+                            
+                            <div class="field">
+                                <label>Check In:</label>
+                                <input type="date" name="checkin" id="checkin" max="2020-05-15">
+                            </div>
+
+                            <div class="field">
+                                <label>Check Out:</label>
+                                <input type="date" name="checkout" id="checkout" min="2020-05-20">
+                            </div>
+
+                            <button id="find" type="submit">
+                                <span class="material-icons">search</span>Search
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
         </section>
