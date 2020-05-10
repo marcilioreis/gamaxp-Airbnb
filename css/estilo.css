@@ -63,7 +63,7 @@ nav a {
     text-align: center;
     text-decoration: none;
     font-weight: bold;
-    font-size: .9em;
+    font-size: .75em;
     text-transform: uppercase;
 
     color: #E31C5F;
@@ -155,6 +155,88 @@ nav a.active {
     position: relative;
 }
 
+.banner .warning{
+    display: block;
+    float: left;
+    width: 40%;
+}
+.banner .searchBar{
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 20px;
+    display: block;
+    float: right;
+    min-height: 140px;
+    width: 50%;
+}
+
+.banner .searchBar #form-search {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.banner .searchBar #form-search input,
+.banner .searchBar #form-search select,
+.banner .searchBar #form-search button {
+    box-sizing: inherit;
+    min-height: 28px;
+    min-width: 200px;
+    line-height: 28px;
+    padding: 5px;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+}
+
+.banner .searchBar #form-search select{
+    -webkit-appearance: menulist;
+       -moz-appearance: menulist;
+            appearance: menulist;
+}
+
+.banner .searchBar #form-search input,
+.banner .searchBar #form-search select{
+    border: 1px solid #eeeeee;
+    background-color: transparent;
+    float: right;
+}
+
+.banner .searchBar #form-search button {
+    color: #ffffff;
+    cursor: pointer;
+    line-height: 30px;
+    font-weight: 700;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color: #FF385C;
+    border: 1px solid;
+    display: block;
+    margin-top: 10px;
+}
+
+.banner .searchBar #form-search button:hover{
+    background-color: #333333;
+    color: #FF385C;
+}
+
+.banner .searchBar #form-search button span{
+    line-height: 30px;
+    vertical-align: bottom;
+}
+
+.banner .searchBar #form-search label{
+    margin-right: 5px;
+}
+.banner .searchBar #form-search .field{
+    display: block;
+    margin-bottom: 10px;
+    width: 46%;
+}
+
 .residence section.card {
     background-color: #ffffff;
     border: 1px solid #eeeeee;
@@ -222,7 +304,29 @@ nav a.active {
     color: #ffffff;
 }
 
+.residence #loadMore{
+    color: #ffffff;
+    line-height: 30px;
+    font-weight: 700;
+    font-size: .9em;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
 
+    background-color: #FF385C;
+    border: 1px solid;
+    display: block;
+    height: 30px;
+    margin: 0 auto;
+    padding: 2px;
+    width: 200px;
+}
+
+.residence #loadMore:hover{
+    background-color: #333333;
+    color: #ffffff;
+    cursor: pointer;
+}
 
 
 /* ==============
