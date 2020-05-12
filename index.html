@@ -8,6 +8,9 @@
 
     <title>Gama Academy - Airbnb Simulator</title>
 
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/alertify.min.css">
+    <link rel="stylesheet" href="css/default.min.css">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/estilo.css">
 
@@ -25,13 +28,6 @@
                     </svg>
                 </a>
             </h1>
-            <nav>
-                <ul>
-                    <li><a href="sobre.html">Sobre</a></li>
-                    <li><a href="contato.html">Contato</a></li>
-                    <li><a href="saiba-mais.html">Saiba Mais</a></li>
-                </ul>
-            </nav>
         </header>
     </div>
 
@@ -42,13 +38,13 @@
             <div class="wrapper clearfix">
                 <div class="lead">
                     <div class="warning">
-                        <h1>Stays in Copenhague</h1>
+                        <h1 id="stay">Stays in </h1>
                         <p><strong>Check travel restrictions before booking.</strong><br>
                             The health and safety of our communities come first.<br>
                             Please follow government guidelines and travel only if it's essential.</p>
                     </div>
                     <div class="searchBar">
-                        <form action="POST" method="post" id="form-search">
+                        <form id="form-search">
                             <div class="field">
                                 <label>Location:</label>
                                 <select name="city" id="city">
@@ -67,12 +63,12 @@
                             
                             <div class="field">
                                 <label>Check In:</label>
-                                <input type="date" name="checkin" id="checkin" max="2020-05-15">
+                                <input type="date" name="checkin" id="checkin" min="2020-05-12">
                             </div>
 
                             <div class="field">
                                 <label>Check Out:</label>
-                                <input type="date" name="checkout" id="checkout" min="2020-05-20">
+                                <input type="date" name="checkout" id="checkout" min="2020-05-12">
                             </div>
 
                             <button id="find" type="submit">
@@ -109,7 +105,10 @@
             </div>
         </footer>
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDThCIRNPf8Rh5GFo1DVZ8ppwHN6Z5xvCk&callback=initMap" async defer></script>
+
+    <!-- JavaScript -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDThCIRNPf8Rh5GFo1DVZ8ppwHN6Z5xvCk" async defer></script>
+    <script src="js/alertify.min.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

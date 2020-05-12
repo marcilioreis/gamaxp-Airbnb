@@ -291,8 +291,8 @@ nav a.active {
     background-color: #FF385C;
     border: 1px solid;
     display: block;
-    padding: 2px;
-    width: 100px;
+    padding: 2px 5px;
+    min-width: 100px;
     height: 30px;
     position: absolute;
     bottom: 30px;
@@ -326,6 +326,10 @@ nav a.active {
     background-color: #333333;
     color: #ffffff;
     cursor: pointer;
+}
+
+.box-info {
+    color: #000000;
 }
 
 
@@ -499,7 +503,7 @@ aside.me .find-me a:hover img{
     }
 
     .residence .img-residence{
-        height: 333px;
+        max-height: 333px;
     }
 
 }
@@ -540,12 +544,12 @@ aside.me .find-me a:hover img{
 
     .main article {
         float: left;
-        width: 40%;
+        width: 34%;
     }
 
     .main aside {
         float: right;
-        width: 48%;
+        width: 55%;
     }
 
     article.about{
