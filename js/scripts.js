@@ -182,28 +182,11 @@ function loadResidence(dataIndex, city, guests, diffDays, destroy) {
   request.send();
 }
 
-function panZoomCard() {
-  const card = document.querySelectorAll(".card");
-  card.forEach(item => {
-    item.addEventListener("click", function () {
-      const latitude = this.getAttribute("data-lat");
-      const longitude = this.getAttribute("data-long");
-      const panPoint = new google.maps.LatLng(latitude, longitude);
-
-      map.setZoom(15); 
-      map.panTo(panPoint);
-      });
-  })
-  
-}
-
 function compareDates() {
   const from = document.getElementById("checkin").value;
   const to = document.getElementById("checkout").value;
-
   const splitFrom = from.split("/");
   const splitTo = to.split("/");
-
   const fromDate = Date.parse(splitFrom[0], splitFrom[1] - 1, splitFrom[2]);
   const toDate = Date.parse(splitTo[0], splitTo[1] - 1, splitTo[2]);
 
@@ -262,6 +245,20 @@ function submitFilter() {
 
     stay.textContent = `Stays in ${city.value}`;
   });
+}
+
+function panZoomCard() {
+  const card = document.querySelectorAll(".card");
+  card.forEach(item => {
+    item.addEventListener("click", function () {
+      const latitude = this.getAttribute("data-lat");
+      const longitude = this.getAttribute("data-long");
+      const panPoint = new google.maps.LatLng(latitude, longitude);
+
+      map.setZoom(15); 
+      map.panTo(panPoint);
+      });
+  })
 }
 
 window.addEventListener("load", function () {
